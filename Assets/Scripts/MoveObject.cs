@@ -13,7 +13,7 @@ public class MoveObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        totalMoveDistance = 10f;
+        totalMoveDistance = 1f;
         startingLocation = gameObject.transform.position;
     }
 
@@ -27,7 +27,7 @@ public class MoveObject : MonoBehaviour
             FlipMoveDirection();
         }
 
-        //gameObject.transform.Translate(moveDirection * moveSpeed);
+        gameObject.transform.Translate(moveDirection * moveSpeed);
     }
 
     void FlipMoveDirection()
